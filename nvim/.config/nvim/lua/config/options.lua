@@ -9,3 +9,4 @@ vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.s
 vim.g.lazyvim_prettier_needs_config = false
 vim.g.lazyvim_python_ruff = "ruff"
 vim.g.lazyvim_python_lsp = "pyright"
+vim.g.lazyvim_mini_snippets_in_completion = true

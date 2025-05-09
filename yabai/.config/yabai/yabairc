@@ -30,4 +30,4 @@ yabai -m rule --add app="^Calculator$" manage=off
 yabai -m rule --add app="^Karabiner-Elements$" manage=off
 
 # change the middle number for the height of sketchybar
-yabai -m config external_bar all:32:0
+# yabai -m config external_bar all:32:0

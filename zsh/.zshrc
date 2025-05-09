@@ -3,7 +3,9 @@
 #   # eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/atomic.omp.json)"
 # fi
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+export TERM=xterm-256color
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -108,6 +110,7 @@ if [ -d "/usr/local/opt/ruby/bin" ]; then
   export PATH=`gem environment gemdir`/bin:$PATH
 fi
 
+export PATH="$HOME/go/bin:$PATH"
 # starship.rs config
 export STARSHIP_CONFIG=~/.config/starship.toml
 eval "$(starship init zsh)"
@@ -169,3 +172,13 @@ export PATH="/Users/Larry/.local/bin":$PATH
 
 alias activate="source .venv/bin/activate"
 alias vim=nvim
+
+# Shopify Hydrogen alias to local projects
+alias h2='$(npm prefix -s)/node_modules/.bin/shopify hydrogen'
+
+# --- OpenFrameworks Root ---
+export OF_ROOT="/Users/Larry/repo/of_v0.12.0_osx_release"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
