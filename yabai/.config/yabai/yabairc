@@ -31,3 +31,7 @@ yabai -m rule --add app="^Karabiner-Elements$" manage=off
 
 # change the middle number for the height of sketchybar
 # yabai -m config external_bar all:32:0
+
+# Ghostty fix
+yabai -m signal --add app='^Ghostty$' event=window_created action='yabai -m space --layout bsp'
+yabai -m signal --add app='^Ghostty$' event=window_destroyed action='yabai -m space --layout bsp'

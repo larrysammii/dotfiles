@@ -120,7 +120,7 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 source "$HOME/.rye/env"
 
 # Path to vcpkg (C++ package manager)
-export VCPKG_ROOT="$HOME/.vcpkg"
+export VCPKG_ROOT="$HOME/vcpkg"
 
 # ----- Bat (better cat) -----
 
@@ -177,7 +177,7 @@ alias vim=nvim
 alias h2='$(npm prefix -s)/node_modules/.bin/shopify hydrogen'
 
 # --- OpenFrameworks Root ---
-export OF_ROOT="/Users/Larry/repo/of_v0.12.0_osx_release"
+export OF_ROOT="/Users/Larry/repo/of_v0.12.1_osx_release"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
